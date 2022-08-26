@@ -1,0 +1,142 @@
+.delivery{
+    &__wrapper{
+        position: relative;
+        padding: 55px 45px 46px;
+        background: linear-gradient(281.12deg, rgba(166, 166, 166, 0.42) -6.7%, rgba(234, 234, 234, 0.2016) 109.31%);
+        box-shadow: 0px 20px 80px -10px rgba(41, 31, 25, 0.21);
+        border-radius: 10px;
+        margin-bottom: 41px;
+        @media (max-width: 767.98px){
+            padding: 190px 45px 46px;
+        }
+        @media (max-width: 575.98px){
+            padding: 190px 20px 30px;
+        }
+    }
+
+    &__decoration{
+        position: absolute;
+
+        &_1{
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-position: right top;
+            @media (max-width: 1239.98px){
+                background-size: 400px;
+            }
+            @media (max-width: 991.98px){
+                background-size: 330px;
+            }
+            @media (max-width: 767.98px){
+                background-size: 230px;
+            }
+        }
+    }
+
+    &__param{
+        font-family: $f700;
+        font-size: 18px;
+        line-height: 23px;
+        @media (max-width: 1239.98px){
+            margin-bottom: 20px;
+        }
+        @media (max-width: 575.98px){
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    &__line{
+        margin-bottom: 26px;
+        max-width: 100%;
+    }
+
+    &__icons{
+        max-width: 384px;
+        @media (max-width: 575.98px){
+            max-width: 100%;
+        }
+    }
+
+    ul{
+        margin-bottom: 26px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 350px;
+        @media (max-width: 575.98px){
+            gap: 10px;
+        }
+    }
+
+    li{
+        font-family: $f600;
+        font-size: 18px;
+        line-height: 23px;
+        @media (max-width: 767.98px){
+            font-size: 16px;
+        }
+        @media (max-width: 575.98px){
+            font-size: 12px;
+            line-height: 140%;
+        }
+    }
+
+    &__order{
+        padding: 40px 18px;
+        box-shadow: 0px 15px 60px -10px rgba(31, 23, 18, 0.16);
+        border-radius: 10px;
+        background: url(../images/delivery-decoration-2.png), url(../images/delivery-decoration-3.png);
+        background-position: left top, right top;
+        background-repeat: no-repeat, no-repeat;
+        @media (max-width: 1239.98px){
+            background-position: -2% top, right top;
+        }
+        @media (max-width: 991.98px){
+            background: none;
+        }
+    }
+
+    &__title{
+        font-family: $f700;
+        font-size: 26px;
+        line-height: 140%;
+        margin: 0 auto 30px;
+        max-width: 701px;
+        @media (max-width: 575.98px){
+            font-size: 18px;
+            line-height: 140%;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__info{
+        font-family: $f600;
+        font-size: 18px;
+        line-height: 150%;
+        color: #6d6d6d;
+        margin-bottom: 16px;
+        @media (max-width: 1239.98px){
+            max-width: 600px;
+            margin: 0 auto 16px;
+        }
+        @media (max-width: 575.98px){
+            font-size: 16px;
+            line-height: 150%;
+            text-align: left;
+            margin-bottom: 28px;
+        }
+    }
+
+    &__form{
+        gap: 20px;
+        @media (max-width: 991.98px){
+            gap: 10px;
+            max-width: 280px;
+            margin: 0 auto;
+        }
+    }
+}

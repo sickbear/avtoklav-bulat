@@ -1,0 +1,37 @@
+/* сброс дефолтных настроек */
+@import '../node_modules/reset-css/sass/reset';
+
+/* настройки bootstrap */
+@import 'breakpoints';
+@import '../node_modules/bootstrap/scss/bootstrap-grid';
+
+/* настройки стилей проекта */
+@import 'functions';
+@import 'fonts';
+@import 'vars';
+@import 'general';
+
+/* компоненты */
+@import 'components/header';
+@import 'components/features';
+@import 'components/video';
+@import 'components/steps';
+@import 'components/reasons';
+@import 'components/stove';
+@import 'components/users';
+@import 'components/food';
+@import 'components/kit';
+@import 'components/dops';
+@import 'components/recipes';
+@import 'components/order';
+@import 'components/set';
+@import 'components/delivery';
+@import 'components/faq';
+@import 'components/kredit';
+@import 'components/feedbacks';
+@import 'components/producer';
+@import 'components/gallery';
+@import 'components/consultation';
+@import 'components/map';
+@import 'components/footer';
+@import 'components/popup';

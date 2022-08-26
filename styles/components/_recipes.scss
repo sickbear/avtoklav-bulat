@@ -1,0 +1,78 @@
+.recipes{
+    position: relative;
+
+    &__img{
+        position: relative;
+        @media (max-width: 991.98px){
+            margin-bottom: 70px;
+        }
+        @media (max-width: 575.98px){
+            margin-bottom: 90px
+        }
+
+        img{
+            width: 100%;
+        }
+    }
+
+    &__sticker{
+        position: absolute;
+        top: -18px;
+        right: 60px;
+        width: 129px!important;
+        @media (max-width: 575.98px){
+            right: auto;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    }
+
+    &__name{
+        font-family: $f700;
+        font-size: 24px;
+        line-height: 140%;
+        margin-bottom: 25px;
+        max-width: 451px;
+        @media (max-width: 575.98px){
+            font-size: 18px;
+        }
+    }
+
+    &__desc{
+        font-family: $f600;
+        font-size: 16px;
+        line-height: 160%;
+        color: #636363;
+        @media (max-width: 575.98px){
+            font-family: $f400;
+            font-size: 14px;
+            line-height: 170%;
+        }
+        
+        p{
+            margin-bottom: 14px;
+        }
+
+        b{
+            font-family: $f700;
+            @media (max-width: 575.98px){
+                color: #000;
+            }
+        }
+    }
+
+    ul{
+        margin-bottom: 46px;
+    }
+
+    .btn{
+        @media (max-width: 991.98px){
+            position: absolute;
+            bottom: 110px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 100%;
+            max-width: 280px;
+        }
+    }
+}

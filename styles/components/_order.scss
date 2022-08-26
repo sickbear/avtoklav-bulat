@@ -1,0 +1,98 @@
+.order{
+    position: relative;
+
+    &__wrapper{
+        gap: 18px;
+        padding-top: 80px;
+        @media (max-width: 767.98px){
+            gap: 70px;
+        }
+        @media (max-width: 575.98px){
+            padding-top: 50px;
+        }
+    }
+
+    &__item{
+        position: relative;
+        padding: 47px 20px 25px;
+        border-radius: 10px;
+        box-shadow: 0px 20px 130px -10px rgba(80, 60, 46, 0.15);
+        max-width: 280px;
+
+        &:after {
+            font-family: "Mont-SemiBold", sans-serif;
+            position: absolute;
+            top: -42px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            content: attr(data-num);
+            width: 114px;
+            height: 89px;
+            background-color: #fff;
+            border-radius: 50%;
+            font-size: 20px;
+            line-height: 20px;
+            text-align: center;
+            padding-top: 28px;
+        }
+
+        &_arrow{
+            position: relative;
+
+            &:before {
+                position: absolute;
+                top: -60px;
+                left: 71%;
+                content: url(../images/order-arrow.svg);
+                @media (max-width: 991.98px){
+                    top: -77px;
+                    left: 65%;
+                }
+                @media (max-width: 767.98px){
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__icon{
+        margin-bottom: 13px;
+
+        img{
+            @media (max-width: 575.98px){
+                max-width: 50px;
+            }
+        }
+    }
+
+    &__name{
+        font-family: $f700;
+        font-size: 20px;
+        line-height: 120%;
+        margin-bottom: 18px;
+        @media (max-width: 991.98px){
+            font-size: 18px;
+        }
+        @media (max-width: 575.98px){
+            font-size: 18px;
+        }
+    }
+
+    &__desc{
+        font-family: $f600;
+        font-size: 16px;
+        line-height: 160%;
+        color: #6d6d6d;
+        @media (max-width: 991.98px){
+            font-size: 14px;
+        }
+    }
+
+    &__decoration{
+        position: absolute;
+        width: 162px;
+        height: 283px;
+        top: -25%;
+        left: 0;
+    }
+}

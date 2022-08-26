@@ -1,0 +1,212 @@
+.popup{
+    display: none;
+    border-radius: 10px;
+
+    &__title{
+        font-family: $f700;
+        font-size: 24px;
+        line-height: 130%;
+        margin-bottom: 6px;
+        @media (max-width: 575.98px){
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        #callme &, #kit-modal &{
+            margin-bottom: 29px;
+        }
+
+        #recipe-modal &{
+            max-width: 368px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__subtitle{
+        font-family: $f700;
+        font-size: 16px;
+        line-height: 130%;
+        max-width: 368px;
+        margin-bottom: 21px;
+        @media (max-width: 575.98px){
+            font-size: 14px;
+        }
+    }
+
+    &__text{
+        font-family: $f600;
+        font-size: 14px;
+        line-height: 140%;
+        margin-bottom: 15px;
+        color: #636363;
+
+        #recipe-modal &{
+            font-size: 16px;
+            line-height: 160%;
+            max-width: 390px;
+            margin-bottom: 39px;
+            margin-left: auto;
+            margin-right: auto;
+            @media (max-width: 575.98px){
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+        }
+
+        &_black{
+            color: $black;
+        }
+    }
+
+    &__img{
+        width: 380px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        background: linear-gradient(26.84deg, rgba(166, 166, 166, 0.42) -3.9%, rgba(234, 234, 234, 0.2016) 169.79%);
+    }
+
+    &__wrapper{
+        padding: 48px 46px 37px;
+        min-width: 520px;
+        @media (max-width: 575.98px){
+            padding: 25px 20px 25px;
+            min-width: 100%;
+        }
+    }
+
+    &__selects{
+        gap: 12px;
+        margin-bottom: 17px;
+    }
+
+    &__fields{
+        display: flex;
+        flex-direction: column;
+        row-gap: 14px;
+        max-width: 300px;
+        @media (max-width: 575.98px){
+            margin-left: auto!important;
+            margin-right: auto!important;
+        }
+
+        #callme &{
+            margin: 0 auto 44px;
+            @media (max-width: 575.98px){
+                margin-bottom: 30px;
+            }
+        }
+
+        #order-modal &{
+            margin: 0 0 26px;
+        }
+
+        #recipe-modal &, #kit-modal &, #order-success &{
+            margin: 0 auto 36px;
+            @media (max-width: 575.98px){
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__field{
+        p{
+            font-family: $f700;
+            font-size: 14px;
+            line-height: 18px;
+            color: #000;
+            margin-bottom: 5px;
+        }
+    }
+
+    &__input{
+        background: #F0F0F0;
+        width: 100%;
+        padding: 10px 15px;
+        border: none;
+
+        #order-success &{
+            border: 1px solid $red;
+        }
+    }
+
+    &__btn{
+        margin: 0 auto 16px;
+    }
+
+    &__info{
+        font-size: 12px;
+        line-height: 140%;
+        color: #444;
+
+        #callme &{
+            max-width: 431px;
+            margin: 0 auto;
+        }
+
+        #order-modal &{
+            max-width: 291px;
+        }
+    }
+
+    &__total{
+        font-family: $f600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #4d4d4d;
+        margin-bottom: 6px;
+
+        span{
+            font-family: $f700;
+            font-size: 20px;
+            line-height: 26px;
+            letter-spacing: 0.02em;
+        }
+    }
+
+    &__order{
+        column-gap: 20px;
+    }
+
+    &__success-icon{
+        display: block;
+        margin: 0 auto 17px;
+        width: 48px;
+        height: 48px;
+    }
+
+    .btn{
+        @media (max-width: 575.98px){
+            width: 100%;
+            max-width: 280px;
+            margin: 0 auto 20px;
+        }
+    }
+}
+
+#callme, #kit-modal{
+    max-width: 580px;
+}
+
+#order-modal{
+    max-width: 1000px;
+
+    &.fancybox__content{
+        padding: 0;
+    }
+}
+
+#recipe-modal{
+    max-width: 620px;
+    background-image: url(../images/recipe-decoration-1.png), url(../images/recipe-decoration-2.png);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+
+    &.fancybox__content{
+        padding: 70px 90px;
+        @media (max-width: 575.98px){
+            background-image: none;
+            padding: 25px 20px 25px;
+        }
+    }
+}

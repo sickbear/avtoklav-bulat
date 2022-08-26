@@ -1,0 +1,7 @@
+@function rem($px) {  // px to rem
+    @return $px / 16 * 1rem;
+}
+
+@function vw($px) {  // px to vw
+    @return $px / 1920 * 100vw;
+}

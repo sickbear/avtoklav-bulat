@@ -1,0 +1,70 @@
+.feedbacks{
+    @extend %slider;
+    
+    &__slider{
+        margin-bottom: 38px;
+    }
+
+    &__wrapper{
+        box-shadow: 0px 20px 25px -10px rgba(80, 60, 46, 0.15);;
+        padding: 26px;
+        border: 1px solid #f5f5f5;
+        border-radius: 10px;
+    }
+
+    &__item{
+        position: relative;
+        z-index: 100;
+    }
+
+    &__header{
+        display: flex;
+        align-items: center;
+        padding-bottom: 23px;
+        margin-bottom: 24px;
+        border-bottom: 1px solid #e0e0e0;
+        gap: 14px;
+    }
+
+    &__avatar{
+        width: 60px;
+        height: 60px;
+    }
+
+    &__name{
+        font-family: $f700;
+        font-size: 18px;
+        line-height: 170%;
+        @media (max-width: 1239.98px){
+            font-size: 16px;
+            line-height: 140%;
+        }
+    }
+
+    &__product{
+        font-family: $f600;
+        font-size: 14px;
+        line-height: 170%;
+    }
+
+    &__desc{
+        position: relative;
+        width: 100%;
+        height: 318px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+
+        img{
+            max-height: 100%;
+            max-width: 100%;
+        }
+    }
+
+    &__more{
+        font-family: $f700;
+        font-size: 12px;
+        color: $red;
+        text-align: right;
+    }
+}

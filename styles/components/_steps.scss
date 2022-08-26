@@ -1,0 +1,119 @@
+.steps{
+    position: relative;
+
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        margin-top: 60px;
+    }
+
+    &__item{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 35px 104px 35px 0;
+        background-color: #fff;
+        box-shadow: 0px 20px 90px -10px rgba(80, 60, 46, 0.15);
+        @media (max-width: 767.98px){
+            flex-direction: column;
+            row-gap: 25px;
+            padding: 48px 21px 12px;
+        }
+
+        &:after{
+            font-family: $f600;
+            position: absolute;
+            top: -40px;
+            left: 45px;
+            content: attr(data-num);
+            width: 89px;
+            height: 89px;
+            background-color: #fff;
+            border-radius: 50%;
+            font-size: 30px;
+            line-height: 38px;
+            color: #D1D1D1;
+            text-align: center;
+            padding-top: 12px;
+            @media (max-width: 1239.98px){
+                left: 23px;
+            }
+            @media (max-width: 991.98px){
+                left: 0;
+            }
+            @media (max-width: 767.98px){
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+        }
+
+        &_arrow{
+            &:before{
+                position: absolute;
+                top: 56%;
+                left: -60px;
+                content: url(../images/step-arrow.svg);
+                @media (max-width: 767.98px){
+                    content: none;
+                }
+            }
+        }
+    }
+
+    &__img{
+        flex: 1 1 20%;
+        display: grid;
+        place-content: center;
+    }
+
+    &__desc{
+        flex: 0 0 80%;
+    }
+
+    &__name{
+        font-family: $f700;
+        font-size: 24px;
+        line-height: 31px;
+        color: #000;
+        margin-bottom: 6px;
+        @media (max-width: 767.98px){
+            font-size: 18px;
+            line-height: 23px;
+        }
+        @media (max-width: 575.98px){
+            margin-bottom: 0;
+        }
+    }
+
+    &__text{
+        font-family: $f600;
+        font-size: 16px;
+        line-height: 170%;
+        color: #000000;
+        opacity: 0.6;
+    }
+
+    &__chevron{
+        padding: 10px;
+    }
+
+    &__decoration{
+        position: absolute;
+
+        &_1{
+            top: 36%;
+            left: 0;
+            width: 140px;
+            height: 133px;
+        }
+
+        &_2{
+            bottom: -4%;
+            left: 0;
+            width: 170px;
+            height: 184px;
+        }
+    }
+}

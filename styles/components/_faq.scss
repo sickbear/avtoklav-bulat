@@ -1,0 +1,94 @@
+.faq{
+    position: relative;
+
+    &__subtitle{
+        font-size: 26px;
+        line-height: 33px;
+        @media (max-width: 575.98px){
+            font-size: 18px;
+            line-height: 23px;
+        }
+    }
+
+    &__wrapper{
+        gap: 20px;
+        @media (max-width: 767.98px){
+            margin-top: 20px;
+        }
+        @media (max-width: 575.98px){
+            margin-top: 10px;
+            gap: 10px;
+        }
+    }
+
+    &__img{
+        width: 100%;
+        box-shadow: $white_block_shadow;
+        @media (max-width: 575.98px){
+            height: 280px;
+            object-fit: cover;
+        }
+    }
+
+    &__item{
+        border-radius: 10px;
+        border: 1px solid #cecdcd;
+        box-shadow: $white_block_shadow;
+    }
+
+    &__question{
+        font-family: $f700;
+        font-size: 18px;
+        line-height: 23px;
+        padding: 25px 70px 22px 34px;
+        background: url(../images/plus.svg) no-repeat 97% center;
+        cursor: pointer;
+        user-select: none;
+        @media (max-width: 575.98px){
+            padding: 15px 70px 15px 15px;
+            font-size: 14px;
+            line-height: 140%;
+        }
+
+        &:hover{
+            border: none;
+            background-image: url(../images/plus-red.svg);
+            box-shadow: $white_block_shadow;
+        }
+
+        &_active{
+            background-image: url(../images/minus-red.svg);
+
+            &:hover{
+                border: none;
+                background-image: url(../images/minus-red.svg);
+                box-shadow: none;
+            }
+        }
+    }
+
+    &__answer{
+        padding: 34px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 14px;
+        font-family: $f600;
+        font-size: 16px;
+        line-height: 170%;
+        color: #4d4d4d;
+        border-top: 1px solid #cecdcd;
+        @media (max-width: 575.98px){
+            padding: 20px;
+            font-size: 14px;
+            line-height: 140%;  
+        }
+    }
+
+    &__decoration{
+        position: absolute;
+        width: 168px;
+        height: 283px;
+        top: -100px;
+        right: 0;
+    }
+}

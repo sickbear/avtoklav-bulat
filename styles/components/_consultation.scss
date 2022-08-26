@@ -1,0 +1,85 @@
+.consultation{
+    &__wrapper{
+        position: relative;
+        box-shadow: 0px 15px 60px -10px rgba(31, 23, 18, 0.16);
+        background: linear-gradient(280.21deg, rgba(166, 166, 166, 0.42) -2.33%, rgba(234, 234, 234, 0.2016) 108.81%);
+        border-radius: 10px;
+        padding: 36px 24px 33px;
+        background: url(../images/consultation-bg-1.png), url(../images/consultation-bg-2.png);
+        background-position: left top, right top;
+        background-repeat: no-repeat, no-repeat;
+        @media (max-width: 1239.98px){
+            background-position: -70% top, 120% top;
+        }
+        @media (max-width: 991.98px){
+            background: linear-gradient(99.44deg, #F6F6F6 -9.08%, #DCDCDC 117.15%);
+            padding: 50px 95px 33px;
+            box-shadow: $white_mob_block_shadow;
+        }
+        @media (max-width: 575.98px){
+            padding: 50px 26px 30px;
+        }
+    }
+
+    &__decoration{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../images/consultation-bg-mob.png) no-repeat left top;
+    }
+
+    &__title{
+        font-family: $f700;
+        font-size: 26px;
+        line-height: 140%;
+        margin-bottom: 14px;
+        @media (max-width: 575.98px){
+            font-size: 16px;
+        }
+    }
+
+    &__num{
+        font-family: $f700;
+        color: $red;
+        font-size: 26px;
+        line-height: 33px;
+        text-decoration: none;
+        @media (max-width: 575.98px){
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+
+    &__info{
+        font-family: $f600;
+        font-size: 14px;
+        line-height: 18px;
+        color: #808080;
+        margin-bottom: 17px;
+        @media (max-width: 575.98px){
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+
+    &__text{
+        font-family: $f600;
+        font-size: 18px;
+        line-height: 150%;
+        color: #676767;
+        margin-bottom: 14px;
+        @media (max-width: 575.98px){
+            font-size: 12px;
+        }
+    }
+
+    &__btn{
+        margin: 0 auto;
+        @media (max-width: 575.98px){
+            width: 100%;
+            max-width: 240px;
+        }
+    }
+}

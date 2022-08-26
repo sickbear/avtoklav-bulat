@@ -1,0 +1,61 @@
+.video-feedbacks{
+    @extend %slider;
+    
+    position: relative;
+    background: $bg_gray;
+
+    &__wrapper{
+        margin-bottom: 30px;
+    }
+
+    &__item{
+        width: 280px;
+        height: 482px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    &__block{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-content: center;
+        border-radius: 10px;
+        background-size: cover;
+    }
+
+    &__name{
+        font-family: $f700;
+        position: absolute;
+        bottom: 18px;
+        left: 26px;
+        font-size: 18px;
+        line-height: 120%;
+        color: #FFFFFF;
+
+        span{
+            font-family: $f300;
+            opacity: 0.7;
+        }
+    }
+
+    &__decoration{
+        position: absolute;
+        z-index: 10;
+
+        &_1{
+            width: 145px;
+            height: 285px;
+            bottom: -10%;
+            left: 0;
+        }
+
+        &_2{
+            width: 91px;
+            height: 158px;
+            bottom: -6%;
+            right: 0;
+        }
+    }
+}

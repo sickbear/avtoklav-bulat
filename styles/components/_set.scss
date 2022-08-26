@@ -1,0 +1,51 @@
+.set{
+    @extend %slider;
+
+    .tns-outer{
+        width: 98%;
+        margin: 0 auto 20px;
+
+        [data-controls]{
+            display: none;
+        }
+    }
+
+    &__img{
+        margin-bottom: 60px;
+
+        img{
+            max-width: 100%;
+        }
+    }
+
+    &__book{
+        position: relative;
+        font-family: $f600;
+        font-size: 22px;
+        line-height: 160%;
+        color: $red;
+        background: linear-gradient(280.21deg, rgba(166, 166, 166, 0.2058) -2.33%, rgba(234, 234, 234, 0.2016) 108.81%);
+        border-radius: 10px;
+        padding: 26px 36px;
+        @media (max-width: 767.98px){
+            font-size: 18px;
+            margin-top: 45px;
+        }
+        @media (max-width: 575.98px){
+            font-size: 16px;
+            line-height: 120%;
+            padding: 16px 118px 16px 16px;
+        }
+
+        img{
+            position: absolute;
+            top: -23px;
+            right: 36px;
+            @media (max-width: 575.98px){
+                width: 74px;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+        }
+    }
+}
